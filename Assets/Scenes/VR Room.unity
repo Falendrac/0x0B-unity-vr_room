@@ -2133,14 +2133,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e611673ed9c29445b526ff99aa749bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 416208715}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
@@ -3654,6 +3654,7 @@ GameObject:
   - component: {fileID: 414092603}
   - component: {fileID: 414092602}
   - component: {fileID: 414092601}
+  - component: {fileID: 414092605}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -3970,7 +3971,7 @@ MonoBehaviour:
   m_ControlPointHeight: 5
   m_SampleFrequency: 20
   m_HitDetectionType: 1
-  m_SphereCastRadius: 0.25
+  m_SphereCastRadius: 0.05
   m_RaycastMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -4150,6 +4151,28 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 875253871413052681, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!114 &414092605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414092599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6df71824f341bc4897680bb8beb4090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MaxRaycastDistance: 10
+  m_ReticlePrefab: {fileID: 115952420295740142, guid: 8016aa7f02045f34f91923657ff00a3a, type: 3}
+  m_PrefabScalingFactor: 1
+  m_UndoDistanceScaling: 0
+  m_AlignPrefabWithSurfaceNormal: 1
+  m_EndpointSmoothingTime: 0
+  m_DrawWhileSelecting: 0
+  m_RaycastMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &416208714
 GameObject:
   m_ObjectHideFlags: 0
@@ -16823,7 +16846,7 @@ MonoBehaviour:
   m_ControlPointHeight: 5
   m_SampleFrequency: 20
   m_HitDetectionType: 1
-  m_SphereCastRadius: 0.25
+  m_SphereCastRadius: 0.05
   m_RaycastMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -17017,10 +17040,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MaxRaycastDistance: 10
   m_ReticlePrefab: {fileID: 115952420295740142, guid: 8016aa7f02045f34f91923657ff00a3a, type: 3}
-  m_PrefabScalingFactor: 0.1
+  m_PrefabScalingFactor: 1
   m_UndoDistanceScaling: 0
   m_AlignPrefabWithSurfaceNormal: 1
-  m_EndpointSmoothingTime: 0.02
+  m_EndpointSmoothingTime: 0
   m_DrawWhileSelecting: 0
   m_RaycastMask:
     serializedVersion: 2
