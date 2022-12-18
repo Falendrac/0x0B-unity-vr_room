@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 
 /// <summary>
 /// Create interaction when the player can select an object
@@ -11,14 +10,13 @@ public class SelectionManager : MonoBehaviour
     // Old material of the object before the highlight hover
     Material oldMaterial;
     // The new material to indicate to the player if an object can be grab
-    Material highlightMaterial;
+    public Material highlightMaterial;
     // The renderer of the object
     Renderer selectionRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
-        highlightMaterial = (Material)AssetDatabase.LoadAssetAtPath("Assets/Materials/Highlight.mat", typeof(Material));
         selectionRenderer = gameObject.GetComponent<Renderer>();
     }
 
