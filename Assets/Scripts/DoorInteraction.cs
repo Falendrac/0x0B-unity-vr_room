@@ -25,18 +25,19 @@ public class DoorInteraction : MonoBehaviour
     }
 
     /// <summary>
-    /// Switch the boolean of the animator in true if the door is closed
-    /// or false if the door is opened
+    /// Set the door animation bool to true for open the door
     /// </summary>
-    public void doorInteraction()
+    public void doorOpen()
     {
-        if (!doorAnimation.GetBool("character_nearby"))
-        {
-            doorAnimation.SetBool("character_nearby", true);
-        }
-        else
-        {
-            doorAnimation.SetBool("character_nearby", false);
-        }
+        doorAnimation.SetBool("character_nearby", true);
+
+    }
+
+    /// <summary>
+    /// Set the door animation bool to false for closed the door
+    /// </summary>
+    public void doorClosed()
+    {
+        doorAnimation.SetBool("character_nearby", false);
     }
 }
