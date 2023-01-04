@@ -16148,7 +16148,6 @@ GameObject:
   - component: {fileID: 1792350375}
   - component: {fileID: 1792350374}
   - component: {fileID: 1792350373}
-  - component: {fileID: 1792350379}
   m_Layer: 0
   m_Name: Console
   m_TagString: Untagged
@@ -16220,22 +16219,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792350372}
   m_Mesh: {fileID: 4300000, guid: 7d22befb952c070459bc8f06ba0a5f84, type: 3}
---- !u!54 &1792350379
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792350372}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 6
-  m_CollisionDetection: 0
 --- !u!4 &1803687453
 Transform:
   m_ObjectHideFlags: 0
