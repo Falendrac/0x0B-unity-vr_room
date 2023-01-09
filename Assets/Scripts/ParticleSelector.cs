@@ -12,9 +12,6 @@ public class ParticleSelector : MonoBehaviour
     /// </summary>
     public void ActivateParticle()
     {
-        if (gameObject.activeSelf)
-            gameObject.SetActive(false);
-        else
-            gameObject.SetActive(true);
+        gameObject.SetActive(true);
     }
 }
