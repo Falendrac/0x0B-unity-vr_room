@@ -19,6 +19,10 @@ public class PanelInteraction : MonoBehaviour
     /// Image display before interactions
     /// </summary>
     public GameObject RawImage;
+    /// <summary>
+    /// Image display in center screen
+    /// </summary>
+    public GameObject RawCardLector;
 
     /// <summary>
     /// Activate the welcome message when the left panel is selected
@@ -28,6 +32,7 @@ public class PanelInteraction : MonoBehaviour
         RawImage.SetActive(false);
         InstructionMessage.SetActive(false);
         WelcomeMessage.SetActive(true);
+        RawCardLector.SetActive(false);
     }
 
     /// <summary>
@@ -39,5 +44,6 @@ public class PanelInteraction : MonoBehaviour
         RawImage.SetActive(false);
         WelcomeMessage.SetActive(false);
         InstructionMessage.SetActive(true);
+        RawCardLector.SetActive(true);
     }
 }
